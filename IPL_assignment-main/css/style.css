@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif; 
+    background : url('https://lh3.googleusercontent.com/rK1qTfgjGpBDg_Q4iU28_e2k-brXUTi61tl0do5EfjcV8WZu5go1wqAOZFcTuD4v2T_2uYyeAa9I805rRTs36QTqt5UKAJ2SPH64V_oHWHUSqM4y6Ub8FUyreY10-8vea8i2fZ59UAs9F5nO3o_mxykBQsc-EYGNP2KSW95WRXTkQyD-Kk4i9VukwVs6au_RyRavWVI2y7u07LB0GB-dNjKTMfBcXP1HoJFkpBSQxmI4iUqqluQ8KXFhXufozb2XX3USfmtLDjZwFhqCtpe025lKNZSoCz7_GPwwbvhD_hKGvnGd3TsbbGJ0MRgMG2bwKgn1zwngS1oFV_K8VU3LpvNLGfQCoAmUEObOeZCzn9nidUbQPNl45pDaIhTkk_vMgw4v0mv_Fa7O6SRkFAiYj4ulfli8bsJkEhmAn08sesFuyQh4_D7JCtJQjuQT1PwnHJxl3q-H4nUYY7FrExr3Jjb9LS92uYtWjr8WiqjyXxkf83J-v_ITGQ7h_4pc_N8Y38Jsc9OTopbYmmaur5zqn602JjqJkQREUKKv_q3dIfYU6UReBfJuFaKWJiyFQ8gzV7BJisJ0k-xXTthJKeE21BTB3sXHfbAWU1NB7yUw_oPEEK5uqCJM8h0AtThVNbBkzAWn4qybkSoVa3Y3Awuld5yLF81poP6NKu10z8JMUirSwuYHwFMLnhVzLF29OQ=w790-h456') top center;
+    background-size:cover;
+    height: 100vh;
+}
+
+
+
+#topbar{
+    text-align: center;
+    box-shadow: 0 2px 4px #ccc;
+    padding: 16px;
+    background-color:#4989d3 ;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.menu-item{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(0,0,0, 0.8);     
+    margin: 0 16px;
+    padding: 16px;
+    letter-spacing: 1.5px;
+    
+}
+.brand-logo img{
+    
+    position: absolute;
+    height: 50px;
+}
+.menu-item:hover{
+    background-color: black;
+    color: white;
+}
+
+.styled-table{
+    border-collapse: collapse;
+    font-size: 0.9em;
+    min-width: 200px;
+    border-collapse: collapse;
+    
+    overflow: hidden;
+    
+    margin: auto;
+    margin-top: 20px;
+    
+}
+
+.table-main-header{
+    background-color: #8d9ae7;
+}
+
+.table-img{
+    height: 65px;
+}
+
+.table-head{
+    background-color: #7165e0;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td{
+    padding: 2px 5px;
+}
+
+.styled-table tbody tr{
+    border-bottom: 1px solid #dddddd; 
+    line-height: 1.6;
+}
+
+.styled-table tbody tr:nth-of-type(odd)
+{
+    background-color:#e6fff9;
+}
+.styled-table tbody tr:nth-of-type(even)
+{
+    background-color: #d6d6c2;
+}
+
+#card-grid{
+    padding: 4% 12%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.card{
+    width: calc(25% - 16px);
+    box-shadow: 10px 12px 9px black;
+    border-radius: 6px;
+    margin: 8px;
+    background-color: white;
+    
+}
+
+.card:hover{
+    animation: bounce 1s linear;
+}
+@keyframes bounce{
+    20%,50%,80%,to{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-30px);
+    }
+}
+.thumbnail{
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    height: 150px;
+}
+.card a{
+    text-decoration: none;
+    
+}
+
+.card-label{
+    margin: 0;
+    padding: 12px;
+    letter-spacing: 1.2px;    
+}
+
+@media(max-width: 600px){
+    
+    .menu-item{
+        letter-spacing: 0;
+        padding: 5px;
+    }
+    
+    
+    .styled-table{
+        font-size: 0.6em;
+        border-collapse: collapse;
+        border-radius: 1em;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 40px;
+
+    }
+
+    
+
+    .table-img{
+        height: 30px;
+    }
+
+    
+
+    .styled-table th,
+    .styled-table td{
+        font-size: 0.8em;
+        padding: 0px 4px;
+    }
+
+    .styled-table tbody tr{
+        border-bottom: 1px solid #dddddd; 
+        line-height: 1.9;
+    }
+
+    #card-grid{
+        padding: 16px;
+    }
+    .card{
+        width: calc(50% - 14px);
+        margin: 7px;
+        height: 210px;
+    }
+    .card-label{
+        font-size: small;
+        margin: 0;
+        padding: 7px;
+        letter-spacing: 0.5px;    
+    }
+}
+
