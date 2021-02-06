@@ -4,7 +4,7 @@
 body{
     margin: 0;
     font-family: 'Poppins', sans-serif; 
-    background : url('C:\Users\shiva\Documents\GitHub\ipl.github.io\Images\917968-ipl.jpg') top center;
+    background : url('Images\917968-ipl.jpg') top center;
     background-size:cover;
     height: 100vh;
 }
